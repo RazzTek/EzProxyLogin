@@ -1,0 +1,14 @@
+{
+    "name": "razztek/sites",
+    "description": "EzProxy login",
+    "type": "project",
+    "require": {
+        "monolog/monolog": "^1.23"
+    },
+    "authors": [
+        {
+            "name": "RazzTek",
+            "email": "garth.mikesell@gmail.com"
+        }
+    ]
+}
