@@ -4,6 +4,7 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
 use RazzTek\Processor\EZproxyTicket;
+use RazzTek\Handler\EzCasErr;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
@@ -15,10 +16,7 @@ $logger->pushHandler(new FirePHPHandler());
 
 $ezproxy = new EZproxyTicket("https://login.dist.lib.usu.edu", EZSECRET, $userCN, $passGroups);
 
-if (strtoupper($userCN) == "GEM") {
-    $logger->info("Failed Login Security -- " . $userCN . " and " . $passGroups);
-    //include 'error_inc.php';
-} elseif ($passGroups !== "None") {
+if ($passGroups !== "None") {
     //$logger->info("Successful Login -- " . $userCN . " and " . $passGroups);
     header("Location: " . $ezproxy->URL($url));
 } else {
