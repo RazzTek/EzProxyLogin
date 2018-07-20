@@ -22,24 +22,26 @@ class EzCasErr
         $message .= "\r\nEmail Address: " . $userattributes['preferredEmail'];
         $message .= "\r\n Information returned from CAS server: \r\n";
         $message .= "Member of Count: " . count($userattributes['memberOf']) . "\r\n";
-        $message .= wordwrap($this->getalluserattr($userattributes), 200, PHP_EOL;
+        $message .= wordwrap($this->getalluserattr($userattributes), 200, PHP_EOL);
         // Send
         mail($to, $subject, $message, $headers);
     }
-    
+
     function getalluserattr($userattributes)
     {
-        private $attr ="";
+        $attr ="";
 
         if (count($userattributes) > 0) {
-             foreach ($$userattributes as $key => $value) {
-                 if (is_array($value)) {
-                      $attr .= $key . ' :';
+             foreach ($userattributes as $key => $value) {
+                 if (is_array($value) && $key == "memberOf") {
+                      $attr .= PHP_EOL . $key . ' :';
                       foreach ($value as $item) {
-                          $attr .= $item . PHP_EOL;
+                          $attr .= PHP_EOL . $item;
                       }
                  } else {
-                      $attr .= PHP_EOL . $key . ' : ' . $value . ',';
+                     if ($key == "displayName") {
+                          $attr .= PHP_EOL . $key . ' : ' . $value . ',';
+                      }
                  }
               }
           }
