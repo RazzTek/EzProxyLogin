@@ -8,10 +8,10 @@ class EzCasErr
     function ezmail($ipaddress, $userattributes)
     {
 
-        $to = 'garth.mikesell@usu.edu'; //, usueres@usu.edu';
+        $to = EZERRMAILTO; //, usueres@usu.edu';
         $subject = 'EzProxy Login Error Security';
-        $headers = 'From: usueres@usu.edu' . "\r\n" .
-               'Reply-To: usueres@usu.edu' . "\r\n" .
+        $headers = 'From: ' . EZERRMAILFROM . "\r\n" .
+               'Reply-To: ' . EZERRMAILFROM . "\r\n" .
                'X-Mailer: PHP/' . phpversion();
 
         $message = "User was successful logging in but was block until verification of account.";
