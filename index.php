@@ -22,6 +22,7 @@ $logger->pushHandler(new FirePHPHandler());
 
 //Create SSO
 $sso = new SsoClient();
+$results = $sso->authenticate();
 
 $attributes = $sso->get_attributes();
 
