@@ -2,8 +2,7 @@
 
 namespace RazzTek\Processor;
 
-class SsoClient
-{
+class SsoClient {
     private $client;
     private $username;
     private $attributes;
