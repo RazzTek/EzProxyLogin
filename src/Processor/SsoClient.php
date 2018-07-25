@@ -90,4 +90,3 @@ class SsoClient {
         return $result;
     }
 }
-?>

@@ -1,6 +1,4 @@
 <?php
-
-<?php
 // Figure out how to move this into a environment setting that can be overridden
 /* CAS Protocol Configuration */
 $cas_host = 'login.usu.edu';
