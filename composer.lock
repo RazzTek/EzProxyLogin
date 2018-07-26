@@ -191,7 +191,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/USULibraryIS/SSOClient",
-                "reference": "30efd0fc7bb46bd7596baa3e15d57c928e9b789d"
+                "reference": "879e3954cf6ed2a77bb056481f7af932219262a0"
             },
             "require": {
                 "jasig/phpcas": "^1.3"
@@ -212,7 +212,7 @@
                 }
             ],
             "description": "CAS connection to USU CAS Server",
-            "time": "2018-07-26T21:49:56+00:00"
+            "time": "2018-07-26T22:06:59+00:00"
         }
     ],
     "packages-dev": [],
