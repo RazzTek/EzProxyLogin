@@ -4,7 +4,7 @@ use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
 use RazzTek\Processor\EZproxyTicket;
-use RazzTek\Processor\SsoClient;
+use razztek\sso-client\Processor\SsoClient;
 use RazzTek\Handler\EzCasErr;
 
 require_once __DIR__ . '/vendor/autoload.php';

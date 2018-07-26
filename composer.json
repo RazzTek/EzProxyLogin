@@ -3,9 +3,10 @@
     "description": "EzProxy login",
     "type": "project",
     "require": {
-        "php": "^7.1",
+        "php": "^7.0",
         "monolog/monolog": "^1.23",
-        "jasig/phpcas": "^1.3"
+        "jasig/phpcas": "^1.3",
+        "razztek/sso-client": "dev-master"
     },
     "autoload": {
         "psr-4": {
@@ -13,6 +14,13 @@
         },
         "files": [ "../init.php"]
     },
+
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/USULibraryIS/SSOClient"
+        }
+    ],
     "authors": [
         {
             "name": "RazzTek",
