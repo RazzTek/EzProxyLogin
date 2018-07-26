@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9f4fa8a8f87aba80f8fcef3c79cc9cec",
+    "content-hash": "67700ce68dafb805540756c58afe77b3",
     "packages": [
         {
             "name": "jasig/phpcas",
@@ -186,12 +186,12 @@
             "time": "2016-10-10T12:19:37+00:00"
         },
         {
-            "name": "razztek/sso-client",
+            "name": "razztek/ssoclient",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/USULibraryIS/SSOClient",
-                "reference": "6f2fc256bad8a33b9974a4f962831ea5994b2c2d"
+                "reference": "7c22963dd3b521d6b91435129c455e65b0a137c9"
             },
             "require": {
                 "jasig/phpcas": "^1.3"
@@ -215,14 +215,14 @@
                 }
             ],
             "description": "CAS connection to USU CAS Server",
-            "time": "2018-07-26T18:58:06+00:00"
+            "time": "2018-07-26T21:19:20+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "razztek/sso-client": 20
+        "razztek/ssoclient": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

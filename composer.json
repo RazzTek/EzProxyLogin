@@ -6,7 +6,7 @@
         "php": "^7.0",
         "monolog/monolog": "^1.23",
         "jasig/phpcas": "^1.3",
-        "razztek/sso-client": "dev-master"
+        "razztek/ssoclient": "dev-master"
     },
     "autoload": {
         "psr-4": {
