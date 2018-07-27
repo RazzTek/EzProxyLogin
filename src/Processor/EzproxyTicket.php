@@ -1,6 +1,6 @@
 <?php
 
-namespace RazzTek\Processor;
+namespace KC7VSZ\Processor;
 
 // This PHP class can be used to generate EZproxy tickets.  See
 // ticket URLs.  When creating a new EZproxyTicket option,
