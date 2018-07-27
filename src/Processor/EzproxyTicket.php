@@ -20,7 +20,7 @@ namespace DevSite\Processor;
 // Once the object is created, you can call its url method with a
 // database URL to generate a ticket URL.
 
-class EZproxyTicket {
+class EzproxyTicket {
   var $EZproxyStartingPointURL;
 
   function __construct (
