@@ -3,7 +3,7 @@
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\FirePHPHandler;
-use DevSite\Processor\EZproxyTicket;
+use DevSite\Processor\EzproxyTicket;
 use RazzTek\SSOClient\Processor\SsoClient;
 use DevSite\Handler\EzCasErr;
 
