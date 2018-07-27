@@ -26,7 +26,7 @@ $results = $sso->authenticate();
 
 //$attributes = $sso->get_attributes();
 $ezerr = new EzCasErr();
-$ezproxy = new EZproxyTicket("https://login.dist.lib.usu.edu", EZSECRET, $userCN, $passGroups);
+//$ezproxy = new EZproxyTicket("https://login.dist.lib.usu.edu", EZSECRET, $userCN, $passGroups);
 
 if ($passGroups !== "None") {
     //$logger->info("Successful Login -- " . $userCN . " and " . $passGroups);
