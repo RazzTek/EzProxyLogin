@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "KC7VSZ\\": "src"
+            "DevSite\\": "src"
         },
         "files": [ "../init.php"]
     },

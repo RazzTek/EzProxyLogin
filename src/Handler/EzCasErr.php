@@ -1,6 +1,6 @@
 <?php
 
-namespace KC7VSZ\Handler;
+namespace DevSite\Handler;
 
 class EzCasErr
 {
