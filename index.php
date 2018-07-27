@@ -24,7 +24,7 @@ $logger->pushHandler(new FirePHPHandler());
 $sso = new SsoClient();
 $results = $sso->authenticate();
 
-$attributes = $sso->get_attributes();
+//$attributes = $sso->get_attributes();
 
 $ezproxy = new EZproxyTicket("https://login.dist.lib.usu.edu", EZSECRET, $userCN, $passGroups);
 
