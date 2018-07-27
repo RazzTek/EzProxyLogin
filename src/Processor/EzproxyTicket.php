@@ -23,7 +23,7 @@ namespace DevSite\Processor;
 class EZproxyTicket {
   var $EZproxyStartingPointURL;
 
-  function EZproxyTicket(
+  function __construct (
     $EZproxyServerURL,
     $secret,
     $user,
