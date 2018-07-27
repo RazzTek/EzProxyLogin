@@ -21,6 +21,7 @@ namespace DevSite\Processor;
 // database URL to generate a ticket URL.
 
 class EzproxyTicket {
+
   var $EZproxyStartingPointURL;
 
   function __construct (
